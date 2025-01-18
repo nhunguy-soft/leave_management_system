@@ -1,0 +1,86 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Nền sáng dịu */
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*min-height: 100vh;*/
+    /*padding: 20px;*/
+}
+
+.container {
+    width: 100%;
+    max-width: 700px; /* Giảm chiều rộng container để trông gọn hơn */
+    background-color: #ffffff; /* Nền trắng cho nội dung */
+    border-radius: 12px; /* Tăng độ bo viền cho hiện đại */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ hơn */
+    overflow: hidden;
+    padding: 20px 30px; /* Tăng padding ngang */
+    margin-top: 35px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px; /* Kích thước vừa phải */
+    font-weight: bold;
+    margin-bottom: 15px; /* Giảm khoảng cách dưới tiêu đề */
+    color: #4a4a4a; /* Màu chữ tối trung tính */
+    border-bottom: 2px solid #6a11cb; /* Đường gạch dưới tím gradient */
+    padding-bottom: 8px; /* Tăng padding dưới tiêu đề */
+}
+
+.details-table {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Căn giữa các nội dung */
+    padding: 8px 12px; /* Giảm khoảng cách padding để trông gọn hơn */
+    border-bottom: 1px solid #ececec; /* Đường ngăn cách màu nhạt hơn */
+}
+
+.row:last-child {
+    border-bottom: none; /* Bỏ đường dưới cùng */
+}
+
+.label {
+    font-weight: bold;
+    color: #6a11cb; /* Màu tím gradient */
+    flex: 1;
+    font-size: 14px; /* Giảm kích thước nhãn */
+}
+
+.value {
+    text-align: right;
+    color: #333333; /* Màu chữ tối trung tính */
+    flex: 2;
+    font-size: 14px; /* Giảm kích thước chữ cho gọn */
+}
+
+/* Hover effect for rows */
+.row:hover {
+    background-color: #f9f7fd; /* Hiệu ứng nền tím nhạt khi hover */
+    transform: scale(1.02); /* Hiệu ứng phóng nhẹ */
+    transition: 0.3s ease; /* Hiệu ứng chuyển động mượt */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .value {
+        text-align: left;
+        margin-top: 5px;
+    }
+}

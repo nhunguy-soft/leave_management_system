@@ -9,56 +9,10 @@
     <script type="text/javascript" th:src="@{/webjars/jquery/3.6.0/jquery.min.js}"></script>
 </head>
 <body>
-<!--<nav class="navbar navbar-dark bg-primary">-->
-<!--  &lt;!&ndash; Navbar content &ndash;&gt;-->
-<!--  <div align="center">-->
-<!--    <h3 >Welcome to Employee Self Service Portal</h3>-->
-<!--  </div>-->
-<!--</nav>-->
-<!--<br/>-->
-<!--<br/>-->
-<!--<br/>-->
-<!--<div class="row align-items-center">-->
-<!--  <div class="col">-->
-<!--    <img th:src="@{/myimg.jpg}" width="700px" class="rounded float-start" alt="Image">-->
-<!--  </div>-->
-<!--  <div class="col container">-->
-
-
-<!--    <div class="border border-secondary rounded p-3" style="max-width:400px; margin:0 auto">-->
-<!--      <div th:if="${message!=null}" class="alert alert-success text-center">-->
-<!--        [[${message}]]-->
-<!--      </div>-->
-
-<!--      <form th:action="@{/adminlogin}" method="post">-->
-<!--        <h3>Login</h3>-->
-
-<!--        &lt;!&ndash; Email input &ndash;&gt;-->
-<!--        <div class="form-outline mb-4">-->
-<!--          <label class="form-label" for="form2Example1">Employee Id</label>-->
-<!--          <input type="number" name="empId" id="form2Example1" class="form-control" />-->
-<!--        </div>-->
-
-<!--        &lt;!&ndash; Password input &ndash;&gt;-->
-<!--        <div class="form-outline mb-4">-->
-<!--          <label class="form-label" for="form2Example2">Password</label>-->
-<!--          <input type="password" name="password" id="form2Example2" class="form-control" />-->
-<!--        </div>-->
-
-
-
-<!--        &lt;!&ndash; Submit button &ndash;&gt;-->
-<!--        <input type="submit" class="btn btn-primary mb-4" value="Sign In">-->
-<!--      </form>-->
-
-<!--    </div>-->
-
-<!--  </div>-->
-<!--</div>-->
 
 <div class="session align-content-center">
   <div class="left">
-      <img class="left" th:src="@{/login.jpg}">
+    <img class="left" th:src="@{/login.jpg}">
   </div>
   <div th:if="${message!=null}" class="alert alert-success text-center">
     [[${message}]]

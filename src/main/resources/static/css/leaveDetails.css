@@ -270,6 +270,11 @@ tbody td {
     background-color: #5a6268;
 }
 
+.button-group {
+    display: flex;  /* Dùng flexbox để các button nằm ngang */
+    gap: 10px;  /* Khoảng cách giữa các button */
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
