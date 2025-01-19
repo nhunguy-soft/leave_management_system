@@ -18,5 +18,9 @@ This project is designed to Manage employee leave.
 - Thymeleaf
 - HTML/CSS/JavaScript
 
+## Screenshot
+
+### Image from Local Folder
+![Local Screenshot](ProjectDescriptionImage/Login.png)
 
 
