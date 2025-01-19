@@ -19,18 +19,22 @@ public class ApplyLeave {
     private String LeaveReason;
 
 
-    public ApplyLeave(int leaveid, int employeeId, String fromDate,int noOfDays, String leaveCategory, String leaveStatus, String leaveReason) {
+    public ApplyLeave(int leaveid, int employeeId, String fromDate,int noOfDays, String leaveCategory,
+                      String leaveStatus, String leaveReason) {
 
         this.leaveid = leaveid;
         this.employeeId = employeeId;
         this.fromDate = fromDate;
+
         this.noOfDays=noOfDays;
         this.leaveCategory = leaveCategory;
         this.leaveStatus = leaveStatus;
         this.LeaveReason = leaveReason;
     }
 
-    public ApplyLeave() {}
+    public ApplyLeave() {
+
+    }
 
     public int getLeaveid() {
 
@@ -43,62 +47,49 @@ public class ApplyLeave {
     }
 
     public int getEmployeeId() {
-
         return employeeId;
     }
 
     public void setEmployeeId(int employeeId) {
-
         this.employeeId = employeeId;
     }
 
     public String getFromDate() {
-
         return fromDate;
     }
 
     public void setFromDate(String fromDate) {
-
         this.fromDate = fromDate;
     }
-
     public int getNoOfDays() {
-
         return noOfDays;
     }
 
     public void setNoOfDays(int noOfDays) {
-
         this.noOfDays = noOfDays;
     }
 
     public String getLeaveCategory() {
-
         return leaveCategory;
     }
 
     public void setLeaveCategory(String leaveCategory) {
-
         this.leaveCategory = leaveCategory;
     }
 
     public String getLeaveStatus() {
-
         return leaveStatus;
     }
 
     public void setLeaveStatus(String leaveStatus) {
-
         this.leaveStatus = leaveStatus;
     }
 
     public String getLeaveReason() {
-
         return LeaveReason;
     }
 
     public void setLeaveReason(String leaveReason) {
-
         LeaveReason = leaveReason;
     }
 }

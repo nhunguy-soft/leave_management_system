@@ -44,6 +44,7 @@ public class Employee {
     @Size(max = 70)
     private String departmentName;
 
+
     @Column(length=200,nullable=false)
     private String address;
 

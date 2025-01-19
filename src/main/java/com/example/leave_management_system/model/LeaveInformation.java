@@ -20,7 +20,8 @@ public class LeaveInformation {
     public LeaveInformation() {
     }
 
-    public LeaveInformation(int earnedLeave, int inicidentalLeave, int leaveWithoutPay, int shortLeave) {
+    public LeaveInformation(int earnedLeave, int inicidentalLeave, int leaveWithoutPay,
+                            int shortLeave) {
         this.earnedLeave = earnedLeave;
         this.inicidentalLeave = inicidentalLeave;
         this.leaveWithoutPay = leaveWithoutPay;

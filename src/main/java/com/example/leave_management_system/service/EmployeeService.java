@@ -45,8 +45,6 @@ public class EmployeeService {
         return employ;
     }
 
-
-
     public List<Role> getRoles() {
         return (List<Role>) roleR.findAll();
     }

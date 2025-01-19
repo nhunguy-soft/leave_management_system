@@ -21,15 +21,17 @@ public class LeaveInfoEmployees {
 
     private int shortLeave;
 
-    public LeaveInfoEmployees() {}
+    public LeaveInfoEmployees() {
 
-    public LeaveInfoEmployees(int employeeId, int earnedLeave, int inicidentalLeave, int leaveWithoutPay, int shortLeave) {
+    }
+
+    public LeaveInfoEmployees(int employeeId, int earnedLeave, int inicidentalLeave,
+                              int leaveWithoutPay, int shortLeave) {
         this.employeeId = employeeId;
         this.earnedLeave = earnedLeave;
         this.inicidentalLeave = inicidentalLeave;
         this.leaveWithoutPay = leaveWithoutPay;
         this.shortLeave = shortLeave;
-
     }
 
     public int getLeaveId() {

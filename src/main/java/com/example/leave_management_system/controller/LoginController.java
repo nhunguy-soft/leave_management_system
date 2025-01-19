@@ -19,7 +19,7 @@ import java.util.List;
 @Controller
 public class LoginController {
     @Autowired
-    public EmployeeService employeeService;
+    public EmployeeService empService;
 
     @GetMapping("/")
     public String login() {
@@ -30,11 +30,11 @@ public class LoginController {
     public String adminLogin(@RequestParam String empId, @RequestParam String password, Model model) {
 
         try {
-            boolean res = employeeService.isLoginSuccessful(Integer.parseInt(empId), password);
+            boolean res = empService.isLoginSuccessful(Integer.parseInt(empId), password);
             if (res) {
                 model.addAttribute("id", empId);
 
-                Employee emp = employeeService.findEmployeeById(Integer.parseInt(empId));
+                Employee emp = empService.findEmployeeById(Integer.parseInt(empId));
                 int flag = 0;
 
                 for (Role role : emp.getRoles()) {
@@ -45,7 +45,7 @@ public class LoginController {
                 }
 
                 if (flag == 1) {
-                    List<Employee> employees = employeeService.getAllEmployee();
+                    List<Employee> employees = empService.getAllEmployee();
                     model.addAttribute("employees", employees);
                     return "employeelist";
                 }
