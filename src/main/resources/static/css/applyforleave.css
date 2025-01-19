@@ -72,6 +72,23 @@ h2 {
     background-color: #d6d6d6;
 }
 
+.form-actions a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #e0e0e0;
+    text-decoration: none; /* Xóa gạch chân */
+    display: inline-block; /* Đảm bảo thẻ a có thể định dạng như một nút */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-actions a:hover {
+    background-color: #d6d6d6;
+}
+
 .form-actions .next-btn {
     background-color: #9fabff;
     color: #fff;

@@ -64,13 +64,17 @@ header h1 {
     transition: background-color 0.3s ease;
 }
 
-.add-user-btn:hover {
-    background-color: rgb(129, 198, 229);
+a {
+    text-decoration: none; /* Xóa gạch chân */
+    display: inline-block; /* Đảm bảo thẻ a có thể định dạng như một nút */
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-a {
-    text-decoration: none;
+a:hover {
+    /*background: rgba(255, 255, 255, 0.2);*/
     color: #ffffff;
+    transform: scale(1.1);
 }
 
 /* Search Filters */
@@ -145,10 +149,6 @@ tbody td {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.edit-btn:hover {
-    background-color:#7fc7e5;
 }
 
 /* Status Label */

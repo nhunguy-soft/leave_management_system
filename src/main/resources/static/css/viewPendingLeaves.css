@@ -68,10 +68,10 @@ header h1 {
     background-color: rgb(129, 198, 229);
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: #ffffff;*/
+/*}*/
 
 /* Search Filters */
 .filters {
@@ -136,20 +136,21 @@ tbody td {
     color: #333;
 }
 
-.edit-btn {
-    background-color: #9fabff;
-    color: #fff;
-    border: none;
-    padding: 6px 12px;
-    font-size: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+/*.edit-btn {*/
+/*    background-color: #9fabff;*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    padding: 6px 12px;*/
+/*    font-size: 12px;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
 
-.edit-btn:hover {
-    background-color:#7fc7e5;
-}
+/*.edit-btn:hover {*/
+/*    color: #ffffff;*/
+/*    transform: scale(1.1);*/
+/*}*/
 
 /* Status Label */
 .status {
@@ -268,6 +269,30 @@ tbody td {
 
 .cancel-btn:hover {
     background-color: #5a6268;
+}
+
+.edit-btn {
+    background-color: #9fabff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none; /* Xóa gạch chân */
+    display: inline-block; /* Đảm bảo thẻ a có thể định dạng như một nút */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a:hover {
+    /*background: rgba(255, 255, 255, 0.2);*/
+    color: #ffffff;
+    transform: scale(1.1);
 }
 
 /* Animations */

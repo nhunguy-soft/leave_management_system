@@ -68,11 +68,6 @@ header h1 {
     background-color: rgb(129, 198, 229);
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 /* Search Filters */
 .filters {
     display: flex;
@@ -242,32 +237,72 @@ tbody td {
     gap: 10px;
 }
 
-.cancel-btn,
-.save-btn {
+/* Định dạng cơ bản cho các thẻ a trong header */
+header .back-btn {
+    padding: 10px 20px;
     border: none;
-    padding: 10px 15px;
-    font-size: 14px;
     border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #e0e0e0;
+    text-decoration: none; /* Xóa gạch chân */
+    display: inline-block; /* Hiển thị như nút */
     cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng mượt mà khi hover */
+}
+
+header .back-btn:hover {
+    background-color: #d6d6d6;
+}
+
+header a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #e0e0e0;
+    text-decoration: none; /* Xóa gạch chân */
+    display: inline-block; /* Hiển thị như nút */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng mượt mà khi hover */
+}
+
+/* Hiệu ứng khi hover vào nút */
+header a:hover {
+    background-color: #d6d6d6;
 }
 
 .cancel-btn {
-    background-color: #6c757d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #9fabff;
     color: #fff;
-}
-
-.save-btn {
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.save-btn:hover {
-    background-color: #0056b3;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .cancel-btn:hover {
-    background-color: #5a6268;
+    /*background-color: #d6d6d6;*/
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 /* Animations */

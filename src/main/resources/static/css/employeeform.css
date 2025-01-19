@@ -7,7 +7,7 @@ body {
 
 .form-container {
     max-width: 900px;
-    margin: 50px auto;
+    margin: 25px auto;
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 10px;
@@ -63,15 +63,6 @@ h2 {
     transition: 0.3s;
 }
 
-.form-actions .cancel-btn {
-    background-color: #e0e0e0;
-    color: #333;
-}
-
-.form-actions .cancel-btn:hover {
-    background-color: #d6d6d6;
-}
-
 .form-actions .next-btn {
     background-color: #9fabff;
     color: #fff;
@@ -95,4 +86,31 @@ h2 {
 
 .footer-text a:hover {
     text-decoration: underline;
+}
+
+.form-actions .cancel-btn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.form-actions .cancel-btn:hover {
+    background-color: #d6d6d6;
+}
+
+.form-actions a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hiệu ứng khi hover vào nút */
+.form-actions  a:hover {
+    background-color: #d6d6d6;
 }
